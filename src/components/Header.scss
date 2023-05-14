@@ -1,0 +1,50 @@
+@import '../Styles/utilities';
+@import '../Styles/variables';
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: $base-size + 0.8rem;
+    font-weight: 800;
+    color: $color-blue;
+
+    span {
+      font-weight: 500;
+      color: $color-gray;
+    }
+  }
+
+  .navigation {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5.2rem;
+      height: 100%;
+      text-transform: uppercase;
+      font-size: $base-size + 0.2rem;
+    }
+
+    &-item {
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-blue;
+      }
+
+      &--icon {
+        svg {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '../../Styles/utilities';
+@import '../../Styles/variables';
+
+.cta {
+  position: relative;
+
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+    &__title {
+      text-transform: uppercase;
+      font-size: $base-size + 1.6rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+      text-shadow: $text-shadow;
+    }
+
+    &__sub-title {
+      font-size: $base-size + 0.6rem;
+      text-align: center;
+      text-shadow: $text-shadow;
+      margin-bottom: 2.5rem;
+      font-weight: normal;
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    &__button {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      border: 3px solid $color-blue;
+      background-color: #fff;
+      padding: 1.2rem 3.2rem;
+      font-size: $base-size + 0.4rem;
+      border-radius: 100rem;
+      color: $main-color-text;
+      text-align: center;
+
+      svg {
+        color: $color-blue;
+        width: 2rem;
+        height: 2rem;
+      }
+
+      span {
+        color: $color-blue;
+      }
+    }
+  }
+}

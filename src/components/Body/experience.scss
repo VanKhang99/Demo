@@ -1,0 +1,30 @@
+@import '../../Styles/utilities';
+@import '../../Styles/variables';
+
+.experience {
+  padding: 2rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+  background-image: $linear-gradient1;
+  color: #fff;
+  &-item {
+    b {
+      font-size: $base-size + 4.8rem;
+      font-weight: 800;
+      text-shadow: $text-shadow;
+    }
+
+    sup {
+      font-size: $base-size + 3.2rem;
+    }
+
+    span {
+      font-size: $base-size + 0.8rem;
+      display: block;
+    }
+  }
+}

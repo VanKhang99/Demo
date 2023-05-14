@@ -1,0 +1,56 @@
+@import '../../Styles//variables';
+
+.projects {
+  padding: 0 0 8rem 0;
+  &__title {
+    font-size: $base-size + 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3.2rem;
+
+    color: $color-blue;
+  }
+
+  &-list {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &-item {
+    flex: 1;
+    border: 1px solid $color-gray-2;
+    background-image: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding: 2rem;
+      text-align: center;
+      font-size: $base-size + 0.4rem;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+
+  .dots {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+
+    &-item {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: #222;
+      border-radius: 50%;
+    }
+  }
+}

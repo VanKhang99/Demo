@@ -1,0 +1,36 @@
+@import '../../Styles//variables';
+
+.hotline {
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  font-size: $base-size + 0.2rem;
+
+  &-left,
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &-left {
+    padding-left: 11.5rem;
+  }
+
+  &-right {
+    padding: 1rem 11.5rem;
+    background-color: $color-blue;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    position: relative;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

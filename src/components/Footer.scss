@@ -1,0 +1,104 @@
+@import '../Styles//variables';
+
+.footer {
+  background: $color-blue;
+  padding: 4rem 1.5rem;
+
+  &__title {
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    color: #fff;
+
+    .footer-about {
+      &__title {
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        font-size: $base-size + 0.4rem;
+      }
+
+      &__line {
+        width: 6rem;
+        height: 2px;
+        background: #fff;
+        margin-bottom: 1.6rem;
+      }
+
+      &__description {
+        font-size: $base-size + 0.2rem;
+      }
+    }
+
+    .footer-contact {
+      &__title {
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        font-size: $base-size + 0.4rem;
+      }
+
+      &__line {
+        width: 6rem;
+        height: 2px;
+        background: #fff;
+        margin-bottom: 1.6rem;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: $base-size + 0.2rem;
+      }
+    }
+
+    .footer-info {
+      &__title {
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        font-size: $base-size + 0.4rem;
+      }
+
+      &__line {
+        width: 6rem;
+        height: 2px;
+        background: #fff;
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        font-size: $base-size + 0.2rem;
+      }
+
+      &-input {
+        height: 4rem;
+        margin-top: 2rem;
+        display: flex;
+
+        input {
+          border: none;
+          padding: 0 1.2rem;
+          border-top-left-radius: 100rem;
+          border-bottom-left-radius: 100rem;
+        }
+
+        button {
+          padding: 0 1.6rem;
+          height: 4rem;
+          border: none;
+          border-top-right-radius: 100rem;
+          border-bottom-right-radius: 100rem;
+          background-color: $color-orange;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

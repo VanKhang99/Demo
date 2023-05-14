@@ -1,0 +1,96 @@
+@import '../../Styles//variables';
+
+.solutions {
+  padding: 8rem 0;
+  &__title {
+    font-size: $base-size + 2.4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3.2rem;
+
+    color: $color-blue;
+  }
+
+  &-list {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &-item {
+    flex: 1;
+    border: 1px solid $color-blue;
+    box-shadow: 0 2px 15px rgba(37, 99, 235, 0.5);
+    border-radius: 6rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    &__title {
+      font-size: $base-size + 1.2rem;
+      font-weight: 800;
+      padding: 4rem;
+      background-image: $linear-gradient1;
+      color: #fff;
+      text-shadow: $text-shadow;
+      text-align: center;
+    }
+
+    .list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      column-gap: 1rem;
+      row-gap: 3.2rem;
+      padding: 4rem 3.2rem 4rem 3.2rem;
+
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        gap: 1.2rem;
+
+        &-img {
+          width: 4rem;
+        }
+
+        svg {
+          width: 2.4rem;
+          height: 2.4rem;
+          color: #fff;
+        }
+
+        p {
+          font-size: $base-size + 0.4rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .solution-content {
+      button {
+        border: none;
+        width: 100%;
+        padding: 0.8rem 4.8rem;
+        background-color: $color-blue;
+        color: #fff;
+        font-size: $base-size + 0.2rem;
+        width: max-content;
+        font-weight: normal;
+        cursor: pointer;
+      }
+    }
+  }
+}
